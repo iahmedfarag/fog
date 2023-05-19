@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --color-main: #0088cc;
+  --color-red: #ff5b5b;
+  --color-off-white: rgb(189, 225, 245);
+  --color-f7: #f7f7f7;
+  --color-cf: #cfcfcf;
+  --color-444: #444;
+  --color-555: #555;
+  --color-tomatto: #ff7272;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+/* container */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+}
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/* @media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+} */
+.flex {
+  display: flex;
+  align-items: center;
+}

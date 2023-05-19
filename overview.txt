@@ -1,0 +1,75 @@
+pages = [
+    home, products, quick view, cart, wishlist, checkout, 
+    account, login, register, contact,
+]
+
+repeated components = [
+    header {
+        small navbar    --- (html, css) done
+        big navbar      --- (html, css) done
+        features        --- (html, css) done
+    }
+    navLinks{}
+    mainSlider{}        --- (html, css) done
+    smallSlider{}       
+    location{}
+    product{}
+    footer{}
+]
+
+home-page {
+    <header/>
+
+    main {
+        sidebar {
+            categories
+            <smallSlider sale={sale}>
+            subscribe newsletter
+            <smallSlider quotes={quotes}>
+            <smallSlider trends={trends}>
+        }
+
+        content {
+            <mainSlider/>               --- done
+            3 main categories           --- in
+            featured products slider
+            brands
+            best products 
+            another features
+        }
+    }
+
+    <footer/>
+}
+
+products-page {
+    <header/>
+    <navLinks/>
+    <location/>
+
+    sidebar {
+        categories (filter)
+        price (filter)
+        color (filter)
+        sizes (filter)
+        features products
+    }
+
+    content {
+        <mainSlider/>
+        content {
+            sort{}
+            products{
+                <product/>
+            }
+        }
+    }
+
+    <footer/>
+}
+
+
+logo {
+    111px
+    67px
+}
