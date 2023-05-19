@@ -8,6 +8,7 @@
   --color-444: #444;
   --color-555: #555;
   --color-tomatto: #ff7272;
+  --color-green: #4c8946;
 }
 * {
   box-sizing: border-box;
@@ -56,11 +57,11 @@ ul {
     max-width: 1140px;
   }
 }
-/* @media (min-width: 1400px) {
+@media (min-width: 1400px) {
   .container {
     max-width: 1320px;
   }
-} */
+}
 .flex {
   display: flex;
   align-items: center;

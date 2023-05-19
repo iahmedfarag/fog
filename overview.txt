@@ -31,8 +31,8 @@ home-page {
 
         content {
             <mainSlider/>               --- done
-            3 main categories           --- in
-            featured products slider
+            3 main categories           --- done
+            featured products slider    --- in
             brands
             best products 
             another features

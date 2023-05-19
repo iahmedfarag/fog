@@ -20,6 +20,7 @@ const Search = ({ isSearchOpen, setIsSearchOpen }) => {
 const Wrapper = styled.form`
   border-radius: 25px;
   background-color: var(--color-f7);
+
   input {
     border: none;
     outline: none;
@@ -30,6 +31,7 @@ const Wrapper = styled.form`
     background-color: inherit;
     font-size: 13px;
     color: var(--color-555);
+    width: 500px;
   }
   select {
     border: none;
@@ -48,6 +50,17 @@ const Wrapper = styled.form`
     border-left: 1px solid var(--color-cf);
     background-color: inherit;
   }
+  @media (max-width: 1400px) {
+    input {
+      width: 400px;
+    }
+  }
+  @media (max-width: 1200px) {
+    input {
+      width: 260px;
+    }
+  }
+
   @media (max-width: 992px) {
     /* display: none; */
     position: absolute;

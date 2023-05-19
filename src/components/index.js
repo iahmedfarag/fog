@@ -18,10 +18,13 @@ import MainCategories from "./Home/MainCategories";
 import MainSlider from "./Home/MainSlider";
 import MoreFeatures from "./Home/MoreFeatures";
 import HomeContent from "./Home/HomeContent";
+import Product from "./Product";
 
 export {
+  // global
   Header,
   Features,
+  Product,
   //   sidebar //
   Categories,
   News,

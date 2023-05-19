@@ -78,7 +78,7 @@ const MainSlider = () => {
 const Wrapper = styled.section`
   .slick-slider {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     img {
       width: 100%;
@@ -93,6 +93,8 @@ const Wrapper = styled.section`
       bottom: 20px;
       left: 20px;
       width: fit-content;
+      height: fit-content;
+
       /* margin: 0; */
       li {
         border-radius: 50%;
@@ -216,6 +218,9 @@ const Wrapper = styled.section`
           }
         }
       }
+    }
+    .slick-arrow {
+      display: none !important;
     }
   }
 `;
