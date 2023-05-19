@@ -49,26 +49,22 @@ const FeaturedProducts = () => {
   );
 };
 const Wrapper = styled.section`
-  padding: 15px 0;
+  padding: 25px 0;
   padding-bottom: 30px;
   border-bottom: 1px solid var(--color-cf);
-
   header {
     border-bottom: 1px solid var(--color-cf);
     padding-bottom: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   .slider {
     img {
       max-width: 100%;
     }
     .slick-slider {
-      /* padding: 25px 0; */
-      /* position: relative; */
-      /* overflow: hidden; */
       .slick-dots {
         position: absolute;
-        top: -50px;
+        top: -55px;
         right: 0px;
         width: fit-content;
         height: fit-content;

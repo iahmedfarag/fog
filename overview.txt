@@ -32,10 +32,10 @@ home-page {
         content {
             <mainSlider/>               --- done
             3 main categories           --- done
-            featured products slider    --- in
-            brands
-            best products 
-            another features
+            featured products slider    --- done
+            brands                      --- done
+            best products               --- done
+            another features            --- in
         }
     }
 

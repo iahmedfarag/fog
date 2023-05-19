@@ -19,12 +19,14 @@ import MainSlider from "./Home/MainSlider";
 import MoreFeatures from "./Home/MoreFeatures";
 import HomeContent from "./Home/HomeContent";
 import Product from "./Product";
+import RowProduct from "./Home/RowProduct";
 
 export {
   // global
   Header,
   Features,
   Product,
+  RowProduct,
   //   sidebar //
   Categories,
   News,

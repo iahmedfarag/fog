@@ -4,7 +4,7 @@
   --color-red: #ff5b5b;
   --color-off-white: rgb(189, 225, 245);
   --color-f7: #f7f7f7;
-  --color-cf: #cfcfcf;
+  --color-cf: #ebebeb;
   --color-444: #444;
   --color-555: #555;
   --color-tomatto: #ff7272;
@@ -29,6 +29,9 @@ a {
 }
 ul {
   list-style: none;
+}
+img {
+  max-width: 100%;
 }
 /* container */
 .container {
