@@ -51,6 +51,7 @@ const MoreFeatures = () => {
 const Wrapper = styled.section`
   padding: 30px 0;
   display: flex;
+  gap: 20px;
   article {
     width: calc(100% / 3 - 40px / 3);
     text-align: center;
@@ -72,6 +73,19 @@ const Wrapper = styled.section`
         font-size: 13px;
         color: var(--color-555);
         line-height: 1.5;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    article {
+      width: 100%;
+    }
+    .info {
+      /* margin-top: -10px; */
+      p {
+        width: 80%;
+        margin: 0 auto;
       }
     }
   }

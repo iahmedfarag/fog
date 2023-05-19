@@ -1,5 +1,11 @@
 import React from "react";
-import { Header, Features, Sidebar, HomeContent } from "../components/index.js";
+import {
+  Header,
+  Features,
+  Sidebar,
+  HomeContent,
+  Footer,
+} from "../components/index.js";
 import { styled } from "styled-components";
 
 const Home = () => {
@@ -13,6 +19,7 @@ const Home = () => {
           <HomeContent />
         </div>
       </Wrapper>
+      <Footer />
     </>
   );
 };

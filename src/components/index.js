@@ -20,6 +20,7 @@ import MoreFeatures from "./Home/MoreFeatures";
 import HomeContent from "./Home/HomeContent";
 import Product from "./Product";
 import RowProduct from "./Home/RowProduct";
+import Footer from "./Footer";
 
 export {
   // global
@@ -27,6 +28,7 @@ export {
   Features,
   Product,
   RowProduct,
+  Footer,
   //   sidebar //
   Categories,
   News,
