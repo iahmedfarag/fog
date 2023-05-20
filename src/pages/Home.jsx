@@ -10,7 +10,7 @@ import { styled } from "styled-components";
 import { MdMenuOpen } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <Header />
@@ -47,7 +47,7 @@ const Wrapper = styled.main`
       color: var(--color-555);
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       transition: 0.3s;
-
+      display: none;
       &:hover {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         color: var(--color-main);
@@ -60,6 +60,9 @@ const Wrapper = styled.main`
   @media (max-width: 992px) {
     .container {
       gap: 0px;
+      .open {
+        display: block;
+      }
     }
   }
 `;
