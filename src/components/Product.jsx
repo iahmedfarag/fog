@@ -110,8 +110,10 @@ const Wrapper = styled.article`
       line-height: 1;
 
       a {
-        font-size: 12px;
+        font-size: 10px;
         text-transform: uppercase;
+        color: var(--color-555);
+
         &:hover {
           color: var(--color-main);
         }
@@ -122,15 +124,15 @@ const Wrapper = styled.article`
     }
     .rate {
       margin: 3px 0;
-      gap: 2px;
+      /* gap: 2px; */
       span {
         color: var(--color-555);
-        font-size: 14px;
+        font-size: 13px;
       }
     }
     > h4 {
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 500;
       margin: 0;
       padding: 0;
       line-height: 1;

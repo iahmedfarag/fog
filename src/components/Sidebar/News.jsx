@@ -14,7 +14,7 @@ const News = () => {
   );
 };
 const Wrapper = styled.form`
-  padding: 25px 20px;
+  padding: 25px 25px;
   margin-bottom: 25px;
   text-align: center;
   background-color: var(--color-cf);
@@ -23,13 +23,14 @@ const Wrapper = styled.form`
     font-weight: 700;
   }
   p {
-    font-size: 14px;
+    font-size: 13px;
     margin: 15px 0;
     color: var(--color-555);
+    /* font-weight: 400; */
   }
   input {
     padding: 10px 20px;
-    max-width: 100%;
+    width: 100%;
     border-radius: 25px;
     margin-bottom: 15px;
     border: none;

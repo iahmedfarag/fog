@@ -50,9 +50,10 @@ const Brands = () => {
   );
 };
 const Wrapper = styled.section`
-  padding: 25px 0;
+  padding: 35px 0;
   border-bottom: 1px solid var(--color-cf);
   .slick-slider {
+    overflow: hidden;
     .slick-dots {
       display: none !important;
     }
@@ -62,11 +63,11 @@ const Wrapper = styled.section`
     }
 
     .slick-list {
-      margin: 0 -20px;
+      margin: 0 -35px;
       .slick-track {
         .slick-slide {
           > div {
-            margin: 0 20px;
+            margin: 0 35px;
             max-width: 140px;
           }
         }

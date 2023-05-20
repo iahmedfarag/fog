@@ -85,7 +85,7 @@ const Wrapper = styled.section`
             color: var(--color-555);
           }
           span {
-            font-size: 12px;
+            font-size: 11px;
             color: var(--color-555);
           }
         }

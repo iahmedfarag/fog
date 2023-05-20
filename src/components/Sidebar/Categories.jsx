@@ -61,7 +61,7 @@ const Wrapper = styled.section`
     padding: 10.8px;
     gap: 10px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     &:hover {
       background-color: #f1f1f1;
     }

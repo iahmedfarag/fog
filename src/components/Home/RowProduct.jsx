@@ -49,8 +49,8 @@ const Wrapper = styled.article`
       margin: 1px 0;
       span {
         color: var(--color-555);
-        font-size: 14px;
-        margin: 1px 0;
+        font-size: 13px;
+        margin: 2px 0;
       }
     }
     h4 {

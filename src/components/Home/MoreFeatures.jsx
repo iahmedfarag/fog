@@ -56,8 +56,15 @@ const Wrapper = styled.section`
     width: calc(100% / 3 - 40px / 3);
     text-align: center;
     .img {
-      font-size: 60px;
-      color: var(--color-main);
+      svg {
+        border-radius: 50%;
+        color: var(--color-main);
+        font-size: 70px;
+        border: 1px solid var(--color-main);
+        padding: 15px;
+        border-radius: 50%;
+      }
+      margin-bottom: 10px;
     }
     .info {
       h4 {
@@ -65,14 +72,15 @@ const Wrapper = styled.section`
       }
       span {
         font-size: 14px;
+        font-weight: 400;
         margin-top: 2px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         display: block;
       }
       p {
         font-size: 13px;
         color: var(--color-555);
-        line-height: 1.5;
+        line-height: 1.7;
       }
     }
   }
