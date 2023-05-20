@@ -65,8 +65,8 @@ const Wrapper = styled.article`
     }
   }
   .img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    /* height: 200px; */
     position: relative;
     &:hover {
       .img2 {
@@ -192,6 +192,12 @@ const Wrapper = styled.article`
       &.sale {
         background-color: var(--color-tomatto);
       }
+    }
+  }
+  @media (max-width: 576px) {
+    .img {
+      /* max-width: 150px; */
+      /* max-height: 200px; */
     }
   }
 `;
