@@ -24,7 +24,7 @@ const Wrapper = styled.form`
   }
   p {
     font-size: 13px;
-    margin: 15px 0;
+    margin: 10px 0;
     color: var(--color-555);
     /* font-weight: 400; */
   }

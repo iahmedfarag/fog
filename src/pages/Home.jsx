@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Header,
   Features,
@@ -7,15 +7,23 @@ import {
   Footer,
 } from "../components/index.js";
 import { styled } from "styled-components";
-
+import { MdMenuOpen } from "react-icons/md";
+import { AiOutlineClose } from "react-icons/ai";
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <>
       <Header />
       <Features />
       <Wrapper>
         <div className="container">
-          <Sidebar />
+          <button
+            className={`open flex ${isOpen && "active"}`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <AiOutlineClose /> : <MdMenuOpen />}
+          </button>
+          <Sidebar isOpen={isOpen} />
           <HomeContent />
         </div>
       </Wrapper>
@@ -28,6 +36,26 @@ const Wrapper = styled.main`
   .container {
     display: flex;
     gap: 20px;
+    .open {
+      font-size: 30px;
+      position: fixed;
+      top: 200px;
+      left: 0;
+      z-index: 55;
+      padding: 5px;
+      background-color: white;
+      color: var(--color-555);
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      transition: 0.3s;
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        color: var(--color-main);
+      }
+      &.active {
+        left: 270px;
+      }
+    }
   }
   @media (max-width: 992px) {
     .container {

@@ -6,9 +6,9 @@ import News from "./News.jsx";
 import Quotes from "./Quotes.jsx";
 import Trends from "./Trends.jsx";
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen }) => {
   return (
-    <Wrapper>
+    <Wrapper className={`${isOpen && "active"}`}>
       <Categories />
       <Sale />
       <News />
@@ -18,14 +18,22 @@ const Sidebar = () => {
   );
 };
 const Wrapper = styled.aside`
-  /* background-color: bisque; */
   width: calc(25% - 10px);
-  /* min-height: 900px; */
 
   @media (max-width: 992px) {
-    width: 0;
-    overflow: hidden;
-    display: none;
+    position: fixed;
+    width: 270px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 15px;
+    top: 0;
+    z-index: 559;
+    background-color: white;
+    left: -300px;
+    transition: 0.3s;
+    &.active {
+      left: 0;
+    }
   }
 `;
 export default Sidebar;
