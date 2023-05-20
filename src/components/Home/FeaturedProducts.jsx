@@ -49,7 +49,7 @@ const FeaturedProducts = () => {
   );
 };
 const Wrapper = styled.section`
-  padding: 25px 0;
+  padding: 20px 0;
   padding-bottom: 30px;
   border-bottom: 1px solid var(--color-cf);
   header {
@@ -70,7 +70,7 @@ const Wrapper = styled.section`
         height: fit-content;
         li {
           border-radius: 50%;
-          border: 1px solid var(--color-cf);
+          border: 1px solid var(--color-off-white);
           width: 15px;
           height: 15px;
           margin: 0 3px;

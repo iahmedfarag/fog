@@ -10,8 +10,7 @@ repeated components = [
         features        --- (html, css) done
     }
     navLinks{}
-    mainSlider{}        --- (html, css) done
-    smallSlider{}       
+    mainSlider{}        --- (html, css) done    
     location{}
     product{}
     footer{}
@@ -22,11 +21,11 @@ home-page {
 
     main {
         sidebar {
-            categories
-            <smallSlider sale={sale}>
-            subscribe newsletter
-            <smallSlider quotes={quotes}>
-            <smallSlider trends={trends}>
+            categories                  --- done
+            <smallSlider>               --- done
+            subscribe                   --- done
+            <smallSlider>               --- in
+            <smallSlider>               --- in
         }
 
         content {
@@ -35,7 +34,7 @@ home-page {
             featured products slider    --- done
             brands                      --- done
             best products               --- done
-            another features            --- in
+            another features            --- done
         }
     }
 

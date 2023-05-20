@@ -25,6 +25,7 @@ const Wrapper = styled.aside`
   @media (max-width: 992px) {
     width: 0;
     overflow: hidden;
+    display: none;
   }
 `;
 export default Sidebar;
