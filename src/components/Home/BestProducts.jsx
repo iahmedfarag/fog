@@ -11,25 +11,25 @@ const BestProducts = () => {
       <div className="top">
         <h4>TOP RATED PRODUCTS</h4>
         <div className="products">
-          <RowProduct img={img1} />
-          <RowProduct img={img2} />
-          <RowProduct img={img3} />
+          <RowProduct img1={img1} img2={img2} />
+          <RowProduct img1={img2} img2={img1} />
+          <RowProduct img1={img3} img2={img2} />
         </div>
       </div>
       <div className="best">
         <h4>TOP RATED PRODUCTS</h4>
         <div className="products">
-          <RowProduct img={img3} />
-          <RowProduct img={img1} />
-          <RowProduct img={img2} />
+          <RowProduct img1={img1} img2={img2} />
+          <RowProduct img1={img2} img2={img1} />
+          <RowProduct img1={img3} img2={img2} />
         </div>
       </div>
       <div className="latest">
         <h4>TOP RATED PRODUCTS</h4>
         <div className="products">
-          <RowProduct img={img2} />
-          <RowProduct img={img1} />
-          <RowProduct img={img2} />
+          <RowProduct img1={img1} img2={img2} />
+          <RowProduct img1={img2} img2={img1} />
+          <RowProduct img1={img3} img2={img2} />
         </div>
       </div>
     </Wrapper>

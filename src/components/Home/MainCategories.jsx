@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 import cat1 from "../../assets/MainCategories/product07.jpg";
 import cat2 from "../../assets/MainCategories/product08.jpg";
 import cat3 from "../../assets/MainCategories/product09.jpg";
+
 const MainCategories = () => {
   return (
     <Wrapper>
@@ -10,6 +11,7 @@ const MainCategories = () => {
         <div
           className="category watches"
           style={{ backgroundImage: `URL(${cat1})` }}
+          // data-aos="fade-up"
         >
           <div>
             <h3>Porto Watches</h3>
@@ -24,6 +26,7 @@ const MainCategories = () => {
         <div
           className="category sale"
           style={{ backgroundImage: `URL(${cat2})` }}
+          // data-aos="fade-up"
         >
           <h3>DEAL PROMOS</h3>
           <h4>STARTING AT $99</h4>
@@ -32,6 +35,7 @@ const MainCategories = () => {
         <div
           className="category bags"
           style={{ backgroundImage: `URL(${cat3})` }}
+          // data-aos="fade-up"
         >
           <div>
             <h3>Handbags</h3>

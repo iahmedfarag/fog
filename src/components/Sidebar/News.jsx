@@ -17,7 +17,7 @@ const Wrapper = styled.form`
   padding: 25px 25px;
   margin-bottom: 25px;
   text-align: center;
-  background-color: var(--color-cf);
+  background-color: #f1f1f1;
   h4 {
     font-size: 14px;
     font-weight: 700;

@@ -3,10 +3,15 @@ import { styled } from "styled-components";
 import { BiSupport } from "react-icons/bi";
 import { MdPayment } from "react-icons/md";
 import { GiReturnArrow } from "react-icons/gi";
+
 const MoreFeatures = () => {
   return (
     <Wrapper>
-      <article>
+      <article
+        data-aos="fade-up"
+        // data-aos-anchor-placement="bottom-bottom"
+        data-aos-duration="1500"
+      >
         <div className="img">
           <BiSupport />
         </div>
@@ -19,7 +24,11 @@ const MoreFeatures = () => {
           </p>
         </div>
       </article>
-      <article>
+      <article
+        data-aos="fade-up"
+        // data-aos-anchor-placement="bottom-bottom"
+        data-aos-duration="1500"
+      >
         <div className="img">
           <MdPayment />
         </div>
@@ -32,7 +41,11 @@ const MoreFeatures = () => {
           </p>
         </div>
       </article>
-      <article>
+      <article
+        data-aos="fade-up"
+        // data-aos-anchor-placement="bottom-bottom"
+        data-aos-duration="1500"
+      >
         <div className="img">
           <GiReturnArrow />
         </div>

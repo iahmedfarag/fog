@@ -2,12 +2,16 @@ import React from "react";
 import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { styled } from "styled-components";
-
-const Product = ({ img }) => {
+const Product = ({ img1, img2, duration }) => {
   return (
-    <Wrapper className="product">
+    <Wrapper
+      className="product"
+      data-aos="fade-left"
+      data-aos-duration={duration}
+    >
       <div className="img">
-        <img src={img} alt="product-image" />
+        <img src={img1} alt="product-image" className="img1" />
+        <img src={img2} alt="product-image" className="img2" />
         <div className="overlay">
           <div className="content">
             <button className="addToCart flex">
@@ -61,14 +65,38 @@ const Wrapper = styled.article`
     }
   }
   .img {
+    width: 200px;
+    height: 200px;
     position: relative;
+    &:hover {
+      .img2 {
+        /* z-index: 1; */
+        opacity: 1;
+      }
+    }
+    .img1 {
+      position: relative;
+      /* z-index: -2; */
+    }
+    .img2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      /* z-index: -2; */
+      /* z-index: -2; */
+      /* z-index: 99; */
+      transition: 0.5s;
+    }
     .overlay {
       opacity: 0;
       transition: 0.2s;
       position: absolute;
       top: 0;
       left: 0;
-      z-index: 2;
+      z-index: 99;
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.2);
@@ -153,6 +181,7 @@ const Wrapper = styled.article`
     display: flex;
     flex-direction: column;
     gap: 5px;
+    z-index: 5;
     span {
       padding: 1px 10px;
       font-size: 10px;

@@ -24,8 +24,8 @@ home-page {
             categories                  --- done
             <smallSlider>               --- done
             subscribe                   --- done
-            <smallSlider>               --- in
-            <smallSlider>               --- in
+            <smallSlider>               --- done
+            <smallSlider>               --- done
         }
 
         content {

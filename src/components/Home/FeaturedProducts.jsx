@@ -37,11 +37,11 @@ const FeaturedProducts = () => {
         </header>
         <div className="slider">
           <Slider {...settings}>
-            <Product img={img1} />
-            <Product img={img2} />
-            <Product img={img1} />
-            <Product img={img2} />
-            <Product img={img1} />
+            <Product img1={img1} img2={img2} duration="500" />
+            <Product img1={img2} img2={img1} duration="700" />
+            <Product img1={img1} img2={img2} duration="900" />
+            <Product img1={img2} img2={img1} duration="1100" />
+            <Product img1={img1} img2={img2} duration="1300" />
           </Slider>
         </div>
       </div>

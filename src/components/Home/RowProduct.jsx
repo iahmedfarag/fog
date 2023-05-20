@@ -2,12 +2,13 @@ import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { styled } from "styled-components";
 
-const RowProduct = ({ img }) => {
+const RowProduct = ({ img1, img2 }) => {
   return (
     <Wrapper className="flex">
-      <div className="img">
-        <img src={img} alt="product-img" />
-      </div>
+      <a href="" className="img">
+        <img src={img1} alt="product-img" className="img1" />
+        <img src={img2} alt="product-img" className="img2" />
+      </a>
       <div className="info">
         <a href="">Black Gret..</a>
         <div className="rate flex">
@@ -34,8 +35,29 @@ const RowProduct = ({ img }) => {
 const Wrapper = styled.article`
   gap: 10px;
   .img {
+    position: relative;
+    width: 84px;
+    height: 84px;
+    &:hover {
+      .img2 {
+        opacity: 1;
+      }
+    }
     img {
-      width: 84px;
+      width: 100%;
+      object-fit: cover;
+      /* width: 84px; */
+    }
+    .img1 {
+    }
+    .img2 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.5s;
     }
   }
   .info {

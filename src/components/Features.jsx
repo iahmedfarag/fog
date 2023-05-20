@@ -42,7 +42,7 @@ const Features = () => {
 const Wrapper = styled.section`
   .wrapper {
     justify-content: space-between;
-    border: 1px solid #ebebeb;
+    border: 1px solid var(--color-cf);
     padding: 25px;
     gap: 40px;
     article {
@@ -62,6 +62,7 @@ const Wrapper = styled.section`
         p {
           font-size: 13px;
           line-height: 1.2;
+          color: var(--color-555);
         }
       }
       span {
@@ -71,7 +72,7 @@ const Wrapper = styled.section`
         right: -20px;
         top: 50%;
         transform: translateY(-50%);
-        background-color: #ebebeb;
+        background-color: var(--color-cf);
       }
     }
   }

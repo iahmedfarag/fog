@@ -19,7 +19,7 @@ const Trends = () => {
             <img src={img1} alt="" />
           </div>
           <div className="text">
-            <h4>Post Format Video</h4>
+            <h4>Fashion Trends</h4>
             <p>
               Lorem ipsum dolor sit amet contur adipisicing elit. Id, corrupti
               repellat officia atque deleniti!

@@ -31,7 +31,7 @@ const Wrapper = styled.form`
     background-color: inherit;
     font-size: 13px;
     color: var(--color-555);
-    width: 500px;
+    width: 350px;
   }
   select {
     border: none;
@@ -52,12 +52,12 @@ const Wrapper = styled.form`
   }
   @media (max-width: 1400px) {
     input {
-      width: 400px;
+      width: 300px;
     }
   }
   @media (max-width: 1200px) {
     input {
-      width: 260px;
+      width: 230px;
     }
   }
 
