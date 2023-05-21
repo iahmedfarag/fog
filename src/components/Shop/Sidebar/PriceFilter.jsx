@@ -30,7 +30,7 @@ const PriceFilter = () => {
           {isOpen ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </header>
-      <form ref={cats} style={catsStyles}>
+      <div ref={cats} style={catsStyles}>
         <div className="inp">
           <input type="range" min="0" max="100" class="slider" />
         </div>
@@ -41,7 +41,7 @@ const PriceFilter = () => {
           </p>
           <button>FILTER</button>
         </div>
-      </form>
+      </div>
     </Wrapper>
   );
 };
@@ -59,7 +59,7 @@ const Wrapper = styled.section`
       font-weight: 600;
     }
   }
-  form {
+  > div {
     display: flex;
     flex-direction: column;
     /* margin-top: 10px; */

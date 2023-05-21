@@ -21,6 +21,7 @@ const MainSlider = ({ imgHeight }) => {
           <div className="content">
             <h4>OVER 200 PRODUCTS WITH DISCOUNTS</h4>
             <h2>GREAT DEALS</h2>
+
             <div>
               <h3>STARTING AT</h3>
               <p>
@@ -235,6 +236,50 @@ const Wrapper = styled.section`
         .slick-slide {
           .content {
             margin-left: 25px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .slick-slider {
+      .slick-list {
+        .slick-slide {
+          &:first-child {
+            /* .content {
+              width: 200px;
+              h4 {
+                color: var(--color-off-white);
+                font-style: italic;
+
+                font-size: 12px;
+                margin-bottom: 5px;
+              }
+              h2 {
+                color: var(--color-cf);
+                font-size: 20px;
+                line-height: 1;
+                span {
+                  font-size: 30px;
+                  line-height: 1;
+                }
+              }
+              div {
+              }
+            } */
+          }
+          .content {
+            h4 {
+              font-size: 14px;
+            }
+            h2 {
+              font-size: 35px;
+            }
+            div {
+              a {
+                padding: 8px 10px;
+              }
+            }
           }
         }
       }
