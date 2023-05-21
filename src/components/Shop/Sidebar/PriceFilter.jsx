@@ -30,7 +30,7 @@ const PriceFilter = () => {
           {isOpen ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </header>
-      <div ref={cats} style={catsStyles}>
+      <form ref={cats} style={catsStyles}>
         <div className="inp">
           <input type="range" min="0" max="100" class="slider" />
         </div>
@@ -41,14 +41,14 @@ const PriceFilter = () => {
           </p>
           <button>FILTER</button>
         </div>
-      </div>
+      </form>
     </Wrapper>
   );
 };
 const Wrapper = styled.section`
   border: 1px solid var(--color-cf);
   padding: 20px 15px;
-  overflow: hidden;
+  /* overflow: hidden; */
   header {
     justify-content: space-between;
     button {
@@ -59,7 +59,7 @@ const Wrapper = styled.section`
       font-weight: 600;
     }
   }
-  > div {
+  > form {
     display: flex;
     flex-direction: column;
     /* margin-top: 10px; */
@@ -68,6 +68,7 @@ const Wrapper = styled.section`
     transition: 0.3s;
 
     .inp {
+      /* position: relative; */
       /* margin: 10px 0; */
       /* The slider itself */
       .slider {

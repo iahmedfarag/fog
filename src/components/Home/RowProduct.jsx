@@ -1,16 +1,17 @@
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { styled } from "styled-components";
+import { Link } from "react-router-dom";
 
 const RowProduct = ({ img1, img2, sidebar }) => {
   return (
     <Wrapper className="flex">
-      <a href="" className="img">
+      <Link to={`/product/1}`} className="img">
         <img src={img1} alt="product-img" className="img1" />
         <img src={img2} alt="product-img" className="img2" />
-      </a>
+      </Link>
       <div className="info">
-        <a href="">Black Gret..</a>
+        <Link to={`/product/1}`}>Black Gret..</Link>
         <div className="rate flex">
           <span>
             <AiFillStar />

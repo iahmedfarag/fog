@@ -31,7 +31,7 @@ const Wrapper = styled.aside`
   @media (max-width: 992px) {
     position: fixed;
     width: 270px;
-    min-height: 100vh;
+    height: 100vh;
     overflow-y: scroll;
     padding: 15px;
     top: 0;
