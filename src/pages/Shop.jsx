@@ -44,7 +44,7 @@ const Wrapper = styled.main`
       position: fixed;
       top: 200px;
       left: 0;
-      z-index: 55;
+      z-index: 555;
       padding: 5px;
       background-color: white;
       color: var(--color-555);

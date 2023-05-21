@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { styled } from "styled-components";
 
-const RowProduct = ({ img1, img2 }) => {
+const RowProduct = ({ img1, img2, sidebar }) => {
   return (
     <Wrapper className="flex">
       <a href="" className="img">
@@ -26,7 +26,14 @@ const RowProduct = ({ img1, img2 }) => {
           </span>
         </div>
         <h4>
-          $88.00<span> - </span>$99.00
+          $88.00
+          {!sidebar ? (
+            <>
+              <span> - </span>$99.00
+            </>
+          ) : (
+            ""
+          )}
         </h4>
       </div>
     </Wrapper>

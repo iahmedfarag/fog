@@ -5,6 +5,7 @@ import PriceFilter from "./Sidebar/PriceFilter";
 import ColorsFilter from "./Sidebar/ColorsFilter";
 import SizesFilters from "./Sidebar/SizesFilters";
 import FeaturesProductsSidebar from "./Sidebar/FeaturesProductsSidebar";
+import ResetButton from "./Sidebar/ResetButton.jsx";
 
 const ShopSidebar = ({ isOpen }) => {
   return (
@@ -13,6 +14,7 @@ const ShopSidebar = ({ isOpen }) => {
       <PriceFilter />
       <ColorsFilter />
       <SizesFilters />
+      <ResetButton />
       <FeaturesProductsSidebar />
     </Wrapper>
   );
@@ -21,7 +23,7 @@ const Wrapper = styled.aside`
   width: calc(25% - 10px);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 20px; */
   /* > section {
     padding-bottom: 20px;
     border-bottom: 1px solid var(--color-cf);

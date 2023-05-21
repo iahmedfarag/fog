@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { styled } from "styled-components";
 import {
   AiOutlineMinus,
@@ -7,20 +7,19 @@ import {
   AiOutlineArrowUp,
 } from "react-icons/ai";
 const CategoriesFilter = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const cats = useRef(null);
 
-  const handleCats = (e) => {
-    console.log(cats.current.clientHeight);
-    setIsOpen(!isOpen);
+  // console.log(cats);
 
-    if (isOpen) {
-      cats.current.style.maxHeight = 0;
-    } else {
-      cats.current.style.maxHeight = cats.current.clientHeight + "px";
-    }
+  const catsStyles = {
+    maxHeight: isOpen ? `${cats.current.scrollHeight + 10 + "px"}` : "0px",
+    paddingTop: isOpen ? `10px` : "0",
   };
 
+  useEffect(() => {
+    setIsOpen(true);
+  }, []);
   return (
     <Wrapper>
       <header className="flex">
@@ -28,13 +27,13 @@ const CategoriesFilter = () => {
         <button
           className="flex"
           onClick={() => {
-            handleCats();
+            setIsOpen(!isOpen);
           }}
         >
-          <AiOutlineMinus />
+          {isOpen ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </header>
-      <div ref={cats}>
+      <div ref={cats} style={catsStyles}>
         <button>Cloth (5)</button>
         <button>Electronics (5)</button>
         <button>Cloth (5)</button>
@@ -47,9 +46,10 @@ const CategoriesFilter = () => {
   );
 };
 const Wrapper = styled.section`
+  border: 1px solid var(--color-cf);
+  padding: 20px 15px;
   header {
     justify-content: space-between;
-    margin-bottom: 10px;
     button {
       font-size: 16px;
     }
@@ -63,11 +63,15 @@ const Wrapper = styled.section`
     flex-direction: column;
     gap: 10px;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+
+    /* max-height: 0; */
+    /* padding-top: 10px; */
     button {
       font-size: 15px;
       font-weight: 500;
       text-align: left;
+      color: var(--color-555);
       &:hover {
         color: var(--color-main);
       }
