@@ -6,7 +6,7 @@ const Product = ({ img1, img2, duration }) => {
   return (
     <Wrapper
       className="product"
-      data-aos="fade-left"
+      data-aos={duration ? "fade-left" : ""}
       data-aos-duration={duration}
     >
       <div className="img">
@@ -41,7 +41,7 @@ const Product = ({ img1, img2, duration }) => {
           </span>
         </div>
         <h4>
-          $88.00<span> - </span>$99.00
+          <span>$88.00</span> - <span> $99.00 </span>
         </h4>
         <button>
           <AiOutlineHeart />
@@ -159,7 +159,7 @@ const Wrapper = styled.article`
       }
     }
     > h4 {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 500;
       margin: 0;
       padding: 0;

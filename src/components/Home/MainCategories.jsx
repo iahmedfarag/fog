@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 import cat1 from "../../assets/MainCategories/product07.jpg";
 import cat2 from "../../assets/MainCategories/product08.jpg";
 import cat3 from "../../assets/MainCategories/product09.jpg";
+import { Link } from "react-router-dom";
 
 const MainCategories = () => {
   return (
@@ -20,7 +21,7 @@ const MainCategories = () => {
               <h3>30%</h3>
               <h4>OFF</h4>
             </div>
-            <a href="">SHOP NOW</a>
+            <Link to={"/shop"}>SHOP NOW</Link>
           </div>
         </div>
         <div
@@ -30,7 +31,7 @@ const MainCategories = () => {
         >
           <h3>DEAL PROMOS</h3>
           <h4>STARTING AT $99</h4>
-          <a href="">SHOP NOW</a>
+          <Link to={"/shop"}>SHOP NOW</Link>
         </div>
         <div
           className="category bags"
@@ -40,7 +41,7 @@ const MainCategories = () => {
           <div>
             <h3>Handbags</h3>
             <h2>STARTING AT $99</h2>
-            <a href="">SHOP NOW</a>
+            <Link to={"/shop"}>SHOP NOW</Link>
           </div>
         </div>
       </div>

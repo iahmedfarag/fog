@@ -21,6 +21,10 @@ import HomeContent from "./Home/HomeContent";
 import Product from "./Product";
 import RowProduct from "./Home/RowProduct";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
+import Location from "./Location";
+import ShopSidebar from "./Shop/ShopSidebar";
+import ShopContent from "./Shop/ShopContent";
 
 export {
   // global
@@ -29,6 +33,8 @@ export {
   Product,
   RowProduct,
   Footer,
+  Navbar,
+  Location,
   //   sidebar //
   Categories,
   News,
@@ -45,4 +51,7 @@ export {
   MainSlider,
   MoreFeatures,
   HomeContent,
+  // shop //
+  ShopSidebar,
+  ShopContent,
 };

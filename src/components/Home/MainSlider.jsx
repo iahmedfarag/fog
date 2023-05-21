@@ -4,7 +4,8 @@ import img1 from "../../assets/MainSlider/product04.webp";
 import img2 from "../../assets/MainSlider/product05.jpg";
 import img3 from "../../assets/MainSlider/product06.jpg";
 import { styled } from "styled-components";
-const MainSlider = () => {
+import { Link } from "react-router-dom";
+const MainSlider = ({ imgHeight }) => {
   const settings = {
     dots: true,
     infinite: false,
@@ -16,7 +17,7 @@ const MainSlider = () => {
     <Wrapper>
       <Slider {...settings}>
         <div>
-          <img src={img1} alt="" />
+          <img src={img1} alt="" height={imgHeight ? imgHeight : 489} />
           <div className="content">
             <h4>OVER 200 PRODUCTS WITH DISCOUNTS</h4>
             <h2>GREAT DEALS</h2>
@@ -29,13 +30,13 @@ const MainSlider = () => {
                   <span>99</span>
                 </span>
               </p>
-              <a href="">GET YOURS!</a>
+              <Link to={"/shop"}>GET YOURS!</Link>
             </div>
           </div>
         </div>
 
         <div>
-          <img src={img2} alt="" />
+          <img src={img2} alt="" height={imgHeight ? imgHeight : 489} />
           <div className="content">
             <h4>OVER 200 PRODUCTS WITH DISCOUNTS</h4>
             <h2>GREAT DEALS</h2>
@@ -48,13 +49,13 @@ const MainSlider = () => {
                   <span>99</span>
                 </span>
               </p>
-              <a href="">GET YOURS!</a>
+              <Link to={"/shop"}>GET YOURS!</Link>
             </div>
           </div>
         </div>
 
         <div>
-          <img src={img3} alt="" />
+          <img src={img3} alt="" height={imgHeight ? imgHeight : 489} />
           <div className="content">
             <h4>OVER 200 PRODUCTS WITH DISCOUNTS</h4>
             <h2>GREAT DEALS</h2>
@@ -67,7 +68,7 @@ const MainSlider = () => {
                   <span>99</span>
                 </span>
               </p>
-              <a href="">GET YOURS!</a>
+              <Link to={"/shop"}>GET YOURS!</Link>
             </div>
           </div>
         </div>
@@ -82,7 +83,7 @@ const Wrapper = styled.section`
 
     img {
       width: 100%;
-      height: 489px !important;
+      /* height: 489px !important; */
       object-fit: cover;
       background-size: cover;
     }

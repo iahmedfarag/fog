@@ -42,8 +42,8 @@ home-page {
 }
 
 products-page {
-    <header/>
-    <navLinks/>
+    <header/>                   --- done
+    <navLinks/>                 --- in
     <location/>
 
     sidebar {

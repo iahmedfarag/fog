@@ -5,10 +5,12 @@ import { styled } from "styled-components";
 const Call = () => {
   return (
     <Wrapper className="flex">
-      <BsTelephone />
+      <span>
+        <BsTelephone />
+      </span>
       <div className="">
         <p>CALL US NOW</p>
-        <span>+1069858429</span>
+        <span>+10 69 85 84 29</span>
       </div>
     </Wrapper>
   );
@@ -22,12 +24,14 @@ const Wrapper = styled.div`
   div {
     p {
       font-size: 11px;
+      line-height: 1;
       /* margin-bottom: -6px; */
       color: var(--color-555);
     }
     span {
-      font-size: 18px;
-      font-weight: 800;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1;
     }
   }
   @media (max-width: 992px) {
